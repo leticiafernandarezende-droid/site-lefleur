@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Atelier le Fleur</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+<?php
+    include(login.php)
+
+<header class="header">
+
+    <div class="logo">Atelier le Fleur</div>
+
+    <a href="index.php" class="back-link">
+        ← Voltar
+    </a>
+
+</header>
+
+<form action="login.php" method="post"></form>
+
+<main class="formulario">
+
+    <div class="auth-card">
+
+        <div class="auth-icon"></div>
+
+        <h1>Bem-vindo de volta!</h1>
+
+        <p class="auth-description">
+            Entre na sua conta para acessar
+            o gerenciamento da floricultura.
+        </p>
+
+        <form action="login.php" method="POST">
+
+            <div class="form-group">
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="senha">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn-primary btn-full"
+            >
+                Entrar
+            </button>
+
+        </form>
+
+        <p class="auth-footer">
+
+            Ainda não possui uma conta?
+
+            <a href="cadastro.html">
+                Criar conta
+            </a>
+
+        </p>
+
+    </div>
+
+</main>
+?>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta - Atelier le Fleur</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+<header class="header">
+    <div class="logo">Atelier le Fleur</div>
+
+    <a href="index.php" class="back-link">
+        ← Voltar
+    </a>
+</header>
+
+<main class="formulario">
+
+    <div class="auth-card">
+
+        <div class="auth-icon"></div>
+
+        <h1>Criar sua conta</h1>
+
+        <p class="auth-description">
+            Cadastre-se para começar a gerenciar
+            os produtos da floricultura.
+        </p>
+
+        <form action="cadastro.php" method="POST">
+
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+                
+            <div class="form-group">
+                <label for="telefone">
+                    Telefone
+                </label>
+
+                <input type="text"
+                id="telefone"
+                name="telefone"
+                placeholder="Digite seu telefone"
+                
+                >
+            </div>            
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Digite sua senha"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="confirmar_senha">
+                    Confirmar senha
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmar_senha"
+                    name="confirmar_senha"
+                    placeholder="Digite a senha novamente"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="cliente">
+                    Cliente
+                </label>
+
+               <input 
+               type="radio" 
+               id="cliente"
+               name="tipo" 
+               value="cliente"
+               required
+               >
+
+                <label for="admin">
+                    Administrador
+                </label>
+
+               <input 
+               type="radio" 
+               id="admin" 
+               name="tipo" 
+               value="admin"
+               >
+            </div>
+
+            <button type="submit" class="btn-primary btn-full">
+                Criar conta
+            </button>
+
+        </form>
+
+        <p class="auth-footer">
+            Já possui uma conta?
+            <a href="login.html">Entrar</a>
+        </p>
+
+    </div>
+
+</main>
+
+</body>
+</html>
