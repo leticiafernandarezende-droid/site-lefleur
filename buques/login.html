@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login - Atelier le Fleur</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+
+<header class="auth-header">
+
+    <div class="logo">
+        Atelier le Fleur
+    </div>
+
+    <a href="index.php" class="back-link">
+        ← Voltar para início
+    </a>
+
+</header>
+
+
+<main class="auth-container">
+
+    <section class="auth-banner">
+
+        <div class="auth-banner-content">
+
+            <span class="auth-flower">
+                ✿
+            </span>
+
+            <h1>
+                Atelier<br>
+                le Fleur
+            </h1>
+
+            <p>
+                Flores que transformam momentos
+                em memórias especiais.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="auth-form-area">
+
+        <div class="auth-card">
+
+
+            <div class="auth-icon">
+                ♡
+            </div>
+
+
+            <h2>
+                Bem-vindo de volta!
+            </h2>
+
+
+            <p class="auth-description">
+
+                Entre na sua conta para continuar
+                sua experiência no Atelier le Fleur.
+
+            </p>
+
+
+            <form
+                action="login.php"
+                method="POST"
+                class="login-form"
+            >
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-primary btn-full"
+                >
+                    Entrar
+                </button>
+
+
+            </form>
+
+
+            <div class="auth-divider">
+
+                <span>
+                    ou
+                </span>
+
+            </div>
+
+
+            <p class="auth-footer">
+
+                Ainda não possui uma conta?
+
+                <a href="cadastro.html">
+                    Criar conta
+                </a>
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="auth-footer-page">
+
+    <p>
+        &copy; 2026 Atelier le Fleur
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Criar conta - Atelier le Fleur</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="auth-page">
+
+
+<header class="header">
+
+    <div class="logo">
+        Atelier le Fleur
+    </div>
+
+    <a href="index.php" class="back-link">
+        ← Voltar para início
+    </a>
+
+</header>
+
+
+
+<main class="formulario">
+
+
+    <div class="auth-card cadastro-card">
+
+
+        <!-- =================================================
+             CABEÇALHO
+             ================================================= -->
+
+        <div class="auth-icon">
+            ✿
+        </div>
+
+
+        <h1>
+            Criar sua conta
+        </h1>
+
+
+        <p class="auth-description">
+
+            Crie sua conta para comprar seus buquês
+            e receber seus pedidos no endereço informado.
+
+        </p>
+
+
+
+        <form
+            action="cadastro.php"
+            method="POST"
+        >
+
+
+            <!-- =================================================
+                 DADOS PESSOAIS
+                 ================================================= -->
+
+            <div class="cadastro-secao">
+
+                <h2>
+                    Seus dados
+                </h2>
+
+                <p>
+                    Informe seus dados para criar sua conta.
+                </p>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="nome">
+                    Nome completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome completo"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="telefone">
+                    Telefone
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(00) 00000-0000"
+                    required
+                >
+
+            </div>
+
+
+            <div class="cadastro-duplo">
+
+
+                <div class="form-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmar_senha">
+                        Confirmar senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmar_senha"
+                        name="confirmar_senha"
+                        placeholder="Confirme sua senha"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ENDEREÇO
+                 ================================================= -->
+
+            <div class="cadastro-secao endereco-secao">
+
+                <h2>
+                    Endereço de entrega
+                </h2>
+
+                <p>
+                    Informe onde deseja receber seus pedidos.
+                </p>
+
+            </div>
+
+
+            <div class="cadastro-duplo">
+
+
+                <div class="form-group">
+
+                    <label for="cep">
+                        CEP
+                    </label>
+
+                    <input
+                        type="text"
+                        id="cep"
+                        name="cep"
+                        placeholder="00000-000"
+                        maxlength="9"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="estado">
+                        Estado
+                    </label>
+
+                    <select
+                        id="estado"
+                        name="estado"
+                        required
+                    >
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="cidade">
+                    Cidade
+                </label>
+
+                <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Digite sua cidade"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="bairro">
+                    Bairro
+                </label>
+
+                <input
+                    type="text"
+                    id="bairro"
+                    name="bairro"
+                    placeholder="Digite seu bairro"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="rua">
+                    Rua / Avenida
+                </label>
+
+                <input
+                    type="text"
+                    id="rua"
+                    name="rua"
+                    placeholder="Digite sua rua ou avenida"
+                    required
+                >
+
+            </div>
+
+
+            <div class="cadastro-duplo">
+
+
+                <div class="form-group">
+
+                    <label for="numero">
+                        Número
+                    </label>
+
+                    <input
+                        type="text"
+                        id="numero"
+                        name="numero"
+                        placeholder="Ex.: 125"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="complemento">
+                        Complemento
+                    </label>
+
+                    <input
+                        type="text"
+                        id="complemento"
+                        name="complemento"
+                        placeholder="Apto, bloco, casa..."
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BOTÃO
+                 ================================================= -->
+
+            <button
+                type="submit"
+                class="btn-primary btn-full"
+            >
+                Criar minha conta
+            </button>
+
+
+        </form>
+
+
+
+        <p class="auth-footer">
+
+            Já possui uma conta?
+
+            <a href="login.html">
+                Entrar
+            </a>
+
+        </p>
+
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+        Atelier le Fleur — Projeto acadêmico
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
